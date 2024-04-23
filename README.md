@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+=================== Session Topics ===============
+Git repository
+>git credentials
+>code push, pull, commits and code reviews
+
+=======================
+
+1. reactjs youtube videos - https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
+
+
+2. Reactj Adv topics with project implementation - shopping cart (books-10, pens-10, scketches - 20, ruled notes-10, white notebooks-50, white long notebooks-30)
+>User management,
+>display products (json data from nodejs / static data)
+>Add new product (product name, image, avl_qty, price, total_qty)
+>Inventory - add new qty
+>Sale history - who purchased what on which day
+>Analysis report - Date wise purchse, total sold item, high soled item
+
+3. Nodejs Rest Api, Express.js
+3.1 Database connection - MongoDb
+
+===============
+
+4. Python  - Flask / Fast Rest api
+4.1 Database connection - PostgreSql
+
+========Intro Generative AI ========
+
+Simple application with 
+LLMs
+Python Flask api
+UI
+
+
+

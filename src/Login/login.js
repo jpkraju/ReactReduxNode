@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-
 import "./login.css";
+
+// const {validateLogin} = require('../utils/loginVerification');
+import { validateLogin } from "../utils/loginVerification";
+
 function Login(props) {
 
   const [username, setUsername] = useState('');
@@ -16,8 +19,8 @@ function Login(props) {
     e.preventDefault();
     const target = e.target;
     const value = target.value;
-    const name = target.name;
-    console.log(value, name);
+    // const name = target.name;
+    // console.log(value, name);
     setUsername(value);
 
   }
@@ -26,14 +29,16 @@ function Login(props) {
     e.preventDefault();
     const target = e.target;
     const value = target.value;
-    const name = target.name;
-    console.log(value, name);
+    // const name = target.name;
+    // console.log(value, name);
     setPassword(value);
     
   }
 
   function loginButtonClickHandler(e) {
-    alert(username + ' - ' + password);
+    e.preventDefault();
+    // alert(username + ' - ' + password);
+    validateLogin(username, password);
   }
 
   return (

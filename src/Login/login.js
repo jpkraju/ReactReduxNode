@@ -1,9 +1,39 @@
+import React, { useState } from "react";
+
 import "./login.css";
 function Login(props) {
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   function backbuttonclickhandler(e) {
     e.preventDefault();
     // setPageno(0)
     props.loginBackButtonHandler();
+  }
+
+  function usernameChange(e) {
+    e.preventDefault();
+    const target = e.target;
+    const value = target.value;
+    const name = target.name;
+    console.log(value, name);
+    setUsername(value);
+
+  }
+
+  function passwordChange(e) {
+    e.preventDefault();
+    const target = e.target;
+    const value = target.value;
+    const name = target.name;
+    console.log(value, name);
+    setPassword(value);
+    
+  }
+
+  function loginButtonClickHandler(e) {
+    alert(username + ' - ' + password);
   }
 
   return (
@@ -11,16 +41,16 @@ function Login(props) {
       <label>
         <b>User Name</b>
       </label>
-      <input type="text" name="Uname" id="Uname" placeholder="Username" />
+      <input type="text" name="Uname" id="Uname" placeholder="Username" onChange={usernameChange} />
       <br />
       <br />
       <label>
         <b>Password</b>
       </label>
-      <input type="Password" name="Pass" id="Pass" placeholder="Password" />
+      <input type="Password" name="Pass" id="Pass" placeholder="Password" onChange={passwordChange} />
       <br />
       <br />
-      <input type="button" name="log" id="log" value="Log In Here" />
+      <input type="button" name="log" id="log" value="Login" onClick={loginButtonClickHandler} />
       <br />
       <br />
       <input type="checkbox" id="check" />

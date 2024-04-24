@@ -5,16 +5,6 @@ import NewRegistration from "./reg"
 function LoginRegistration() {
   const [pageno, setPageno] = useState(0);
 
-  function loginButtonClick(e) {
-    e.preventDefault();
-    setPageno(1);
-  }
-
-  // function RegistrationButtonClick(e) {
-  //   e.preventDefault();
-  //   setPageno(2);
-  // }
-
   function fn_loginBackButtonHandler123() {
     setPageno(0);
   }

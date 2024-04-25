@@ -38,7 +38,8 @@ function Login(props) {
   function loginButtonClickHandler(e) {
     e.preventDefault();
     // alert(username + ' - ' + password);
-    validateLogin(username, password);
+    var retobj = validateLogin(username, password);
+    console.log('>>>', retobj);
   }
 
   return (

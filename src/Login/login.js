@@ -5,9 +5,9 @@ import "./login.css";
 import { validateLogin } from "../utils/loginVerification";
 
 function Login(props) {
-
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errMessage, setErrMessage] = useState("");
 
   function backbuttonclickhandler(e) {
     e.preventDefault();
@@ -22,7 +22,7 @@ function Login(props) {
     // const name = target.name;
     // console.log(value, name);
     setUsername(value);
-
+    setErrMessage("");
   }
 
   function passwordChange(e) {
@@ -32,14 +32,17 @@ function Login(props) {
     // const name = target.name;
     // console.log(value, name);
     setPassword(value);
-    
+    setErrMessage("");
   }
 
   function loginButtonClickHandler(e) {
     e.preventDefault();
     // alert(username + ' - ' + password);
     var retobj = validateLogin(username, password);
-    console.log('>>>', retobj);
+    console.log(">>>", retobj);
+    if (retobj.error !== "") {
+      setErrMessage(retobj.error);
+    }
   }
 
   return (
@@ -47,16 +50,41 @@ function Login(props) {
       <label>
         <b>User Name</b>
       </label>
-      <input type="text" name="Uname" id="Uname" placeholder="Username" onChange={usernameChange} />
+      <input
+        type="text"
+        name="Uname"
+        id="Uname"
+        placeholder="Username"
+        onChange={usernameChange}
+      />
       <br />
       <br />
       <label>
         <b>Password</b>
       </label>
-      <input type="Password" name="Pass" id="Pass" placeholder="Password" onChange={passwordChange} />
+      <input
+        type="Password"
+        name="Pass"
+        id="Pass"
+        placeholder="Password"
+        onChange={passwordChange}
+      />
       <br />
       <br />
-      <input type="button" name="log" id="log" value="Login" onClick={loginButtonClickHandler} />
+      {errMessage !== "" && (
+        <div>
+          <label style={{ color: "red" }}>{errMessage}</label>
+          <br />
+          <br />
+        </div>
+      )}
+      <input
+        type="button"
+        name="log"
+        id="log"
+        value="Login"
+        onClick={loginButtonClickHandler}
+      />
       <br />
       <br />
       <input type="checkbox" id="check" />

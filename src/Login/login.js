@@ -38,6 +38,18 @@ function Login(props) {
   function loginButtonClickHandler(e) {
     e.preventDefault();
     // alert(username + ' - ' + password);
+
+    //validation
+    if (username === ''){
+      setErrMessage('Enter username');
+      return;
+    }
+    if (password === ''){
+      setErrMessage('Enter password');
+      return;
+    }
+
+
     var retobj = validateLogin(username, password);
     console.log(">>>", retobj);
     if (retobj.error !== "") {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Login from "./login";
-// import NewRegistration from "./reg"
-import NewRegistration from "../Register/Registration";
+import NewRegistration from "./reg"
 
 function LoginRegistration(props) {
   const [pageno, setPageno] = useState(0);

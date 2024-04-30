@@ -3,11 +3,16 @@ import Login from "./login";
 // import NewRegistration from "./reg"
 import NewRegistration from "../Register/Registration";
 
-function LoginRegistration() {
+function LoginRegistration(props) {
   const [pageno, setPageno] = useState(0);
 
   function fn_loginBackButtonHandler123() {
     setPageno(0);
+  }
+
+  function fn_usedata(udata) {
+    // alert(udata.first_name);
+    props.userData(udata);
   }
 
   return (
@@ -33,7 +38,7 @@ function LoginRegistration() {
       {/* Login page */}
       {pageno === 1 && (
         <div>
-          <Login loginBackButtonHandler={fn_loginBackButtonHandler123} />
+          <Login userData={fn_usedata} loginBackButtonHandler={fn_loginBackButtonHandler123} />
         </div>
       )}
 

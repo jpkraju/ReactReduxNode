@@ -1,20 +1,50 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 import "./App.css";
-import LoginRegistration from "./Login/login_registration";
+import Default from "./default";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/Nopage";
+import Products from "./pages/Products";
+import Layout from "./pages/Layout";
+import User from "./pages/user";
 
 function App() {
+  const [islogged, setIslogged] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  function fn_usedata(udata) {
+    // alert(udata.last_name);
+    setLoggedInUser(udata);
+    setIslogged(true);
+  }
+
+  function fn_logout() {
+    setIslogged(false);
+  }
+
   return (
-    <div>
-      <table className="table_sytle">
-        <tr>
-          <td>
-            Company Name & Logo here will be placed here {new Date().toLocaleString() + ""}
-          </td>
-          <td>
-            <LoginRegistration />
-          </td>
-        </tr>
-      </table>
-    </div>
+    <>
+      {!islogged ? (
+        <Default userData={fn_usedata} />
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route
+                index
+                element={<User userData={loggedInUser} logout={fn_logout} />}
+              />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="products" element={<Products />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      )}
+    </>
   );
 }
 

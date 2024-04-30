@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+// import { useNavigate } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import "./login.css";
 
 // const {validateLogin} = require('../utils/loginVerification');
 import { validateLogin } from "../utils/loginVerification";
 
 function Login(props) {
+  // const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMessage, setErrMessage] = useState("");
@@ -51,10 +55,14 @@ function Login(props) {
 
 
     var retobj = validateLogin(username, password);
-    console.log(">>>", retobj);
+    // console.log(">>>", retobj);
     if (retobj.error !== "") {
       setErrMessage(retobj.error);
+    } else {
+      // alert('user logged in');
+      props.userData(retobj);
     }
+
   }
 
   return (

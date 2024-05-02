@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Login from "./login";
+import "./login.css"
 import NewRegistration from "./reg"
 
 function LoginRegistration(props) {

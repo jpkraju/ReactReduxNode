@@ -1,0 +1,43 @@
+.container{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../public/background.jpg");
+}
+.wrapper{
+  height: 445px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 218, 203);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px -1px 22px 3px rgba(0,0,0,0.69);
+-moz-box-shadow: -2px -1px 22px 3px rgba(0,0,0,0.69);
+box-shadow: -2px -1px 22px 3px rgba(0,0,0,0.69);
+}
+.wrapperLeft{
+  flex: 1;
+
+}
+.wrapperRight{
+  flex: 1;
+  padding-left: 50px;
+   /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.dateTime{
+  margin: 20px;
+}
+
+
+.companyLogo{
+  height: 170px;
+  width: 289px;
+}

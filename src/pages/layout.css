@@ -8,6 +8,19 @@
     height: 60px;
     width: 100%;
     background-color: rgb(157, 224, 201);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.topbarLeft{
+    margin-left: 20px;
+}
+.topbarRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
 }
 .topbarLogo{
     height: 50px;
@@ -17,5 +30,22 @@
     margin: 0;
     padding: 0;
     color: black;
-
+}
+.feed{
+    height: 850vh;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    flex: 2;
+    background-color: blanchedalmond;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.Content{
+    flex: 3;
+    background-color: aqua;
 }

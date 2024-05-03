@@ -8,9 +8,27 @@ const Layout = () => {
         <div className="topbar">
           <div className="topbarLeft">
             <img src="pf.png" alt="" className="topbarLogo" />
-            <span className="logoName"><i>Preeti</i>Fabtech</span>
+            {/* <span className="logoName"><i>Preeti</i>Fabtech</span> */}
           </div>
-          {/* <AccountCircleIcon/> */}
+          <div className="topbarRight">
+            {/* <AccountCircleIcon/> */}
+            user
+          </div>
+        </div>
+        <div className="feed">
+          <div className="sidebar">
+            <div className="sidebarWrapper">
+              <ul className="menu">
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/products">Products</Link></li>
+              </ul>
+            </div>
+            <div className="Content">
+              <Outlet />
+            </div>
+          </div>
         </div>
       </div>
 

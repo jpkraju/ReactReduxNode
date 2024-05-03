@@ -1,6 +1,6 @@
 import "./default.css";
+// import "./Components/Assets/pf.jpg"
 import LoginRegistration from "./Login/login_registration";
-
 function Default(props) {
   function fn_usedata(udata) {
     // alert(udata.first_name);

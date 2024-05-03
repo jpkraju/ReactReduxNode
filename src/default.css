@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../public/background.jpg");
+  background-image: url("./Components/Assets/background.jpg");
 }
 .wrapper{
   height: 445px;
@@ -35,8 +35,6 @@ box-shadow: -2px -1px 22px 3px rgba(0,0,0,0.69);
 .dateTime{
   margin: 20px;
 }
-
-
 .companyLogo{
   height: 170px;
   width: 289px;

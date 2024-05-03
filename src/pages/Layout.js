@@ -1,9 +1,27 @@
 import { Outlet, Link } from "react-router-dom";
-
+import "./layout.css"
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const Layout = () => {
   return (
     <>
-      <table style={{ border: "1px solid" }}>
+      <div className="Hcontainer">
+        <div className="topbar">
+          <div className="topbarLeft">
+            <img src="pf.png" alt="" className="topbarLogo" />
+            <span className="logoName"><i>Preeti</i>Fabtech</span>
+          </div>
+          {/* <AccountCircleIcon/> */}
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      {/* <table style={{ border: "1px solid" }}>
         <tr>
           <td style={{ border: "1px solid" }}>
             <nav>
@@ -27,7 +45,7 @@ const Layout = () => {
             <Outlet />
           </td>
         </tr>
-      </table>
+      </table> */}
     </>
   );
 };

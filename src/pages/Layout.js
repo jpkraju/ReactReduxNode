@@ -1,17 +1,15 @@
 import { Outlet, Link } from "react-router-dom";
-import "./layout.css"
+import "./layout.css";
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const Layout = () => {
   return (
     <>
-      <div className="Hcontainer">
+      {/* <div className="Hcontainer">
         <div className="topbar">
           <div className="topbarLeft">
             <img src="pf.png" alt="" className="topbarLogo" />
-            {/* <span className="logoName"><i>Preeti</i>Fabtech</span> */}
           </div>
           <div className="topbarRight">
-            {/* <AccountCircleIcon/> */}
             user
           </div>
         </div>
@@ -30,16 +28,19 @@ const Layout = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-
-
-
-
-
-
-
-      {/* <table style={{ border: "1px solid" }}>
+      <table style={{ border: "1px solid" }}>
+        <tr>
+          <td colspan="2">
+            <div className="topbar">
+              <div className="topbarLeft">
+                <img src="pf.png" alt="" className="topbarLogo" />
+              </div>
+              <div className="topbarRight">user</div>
+            </div>
+          </td>
+        </tr>
         <tr>
           <td style={{ border: "1px solid" }}>
             <nav>
@@ -48,22 +49,31 @@ const Layout = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/blogs">Blogs</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
                   <Link to="/products">Products</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Inventory</Link>
+                </li>
+                <li>
+                  <Link to="/blogs">Reports</Link>
                 </li>
               </ul>
             </nav>
           </td>
           <td style={{ border: "1px solid" }}>
-            <Outlet />
+            <div style={{ height: "100%" }}>
+              <Outlet />
+            </div>
           </td>
         </tr>
-      </table> */}
+        <tr>
+          <td colspan="2">
+            <div className="topbar">
+              @All Rights are reserved to Preetifab tech
+            </div>
+          </td>
+        </tr>
+      </table>
     </>
   );
 };

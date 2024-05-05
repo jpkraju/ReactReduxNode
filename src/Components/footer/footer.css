@@ -1,0 +1,10 @@
+.footerContainer{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3c6d63;
+    position: sticky;
+    bottom: 0;
+}

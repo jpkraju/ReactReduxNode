@@ -108,8 +108,8 @@ function Login(props) {
       <br />
       <br />
       <input type="checkbox" id="check" />
-      <span>Remember me</span>
-      Forgot <a href="#">Password</a>
+      <span className="remember">Remember me</span>
+      <span className="forgot">Forgot <a className="Fpassword" href="#">Password</a></span>
       <br />
       <br />
       <input

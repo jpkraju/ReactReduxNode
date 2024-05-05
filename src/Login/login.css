@@ -6,33 +6,32 @@ body
     font-family: 'Arial';
 }
 .login{
-        width: 382px;
+        width: 80%;
         overflow: hidden;
         margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
+        /* margin: 20 0 0 450px; */
+        padding: 10px;
         background: #23463f;
         border-radius: 15px ;
-
 }
 h2{
     text-align: center;
     color: #277582;
     padding: 20px;
 }
-label{
+label, #lbl{
     color: #08ffd1;
     font-size: 17px;
 }
 #Uname{
-    width: 300px;
+    width: 95%;
     height: 30px;
     border: none;
     border-radius: 3px;
     padding-left: 8px;
 }
 #Pass{
-    width: 300px;
+    width: 95%;
     height: 30px;
     border: none;
     border-radius: 3px;
@@ -40,18 +39,26 @@ label{
 
 }
 #log, #back{
-    width: 300px;
+    width: 90%;
     height: 30px;
     border: none;
     border-radius: 17px;
-    padding-left: 7px;
-    color: blue;
+    color: rgb(39, 39, 95);
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
 }
-span{
+.remember{
     color: white;
     font-size: 17px;
 }
-a{
+.Fpassword{
     float: right;
     background-color: grey;
+}
+.forgot{
+    color: white;
+    font-size: 17px;
+    margin-left: 75px;
 }

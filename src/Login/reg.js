@@ -41,7 +41,6 @@ function NewRegistration(props) {
     const value = target.value;
     setMobile(value);
   }
-
   function passwordChange(e) {
     e.preventDefault();
     const target = e.target;
@@ -67,16 +66,24 @@ function NewRegistration(props) {
       gender
     );
   }
-
-
-
   const handleSelectChange = (event) => {
     event.preventDefault();
     setGender(event.target.value);
   };
-
   return (
     <div className="login">
+      <label>
+        <b>User Id</b>
+      </label>
+       <input
+        type="text"
+        name="Pass"
+        id="Pass"
+        placeholder=""
+        onChange={retypePasswordChange}
+      />
+      <br />
+      <br />
       <label>
         <b>First Name</b>
       </label>
@@ -105,7 +112,7 @@ function NewRegistration(props) {
         <b>Email@gmail</b>
       </label>
       <input
-        type="text"
+        type="email"
         name="Uname"
         id="Uname"
         placeholder="Email"
@@ -117,7 +124,7 @@ function NewRegistration(props) {
         <b>Mobile No</b>
       </label>
       <input
-        type="text"
+        type="number"
         name="Uname"
         id="Uname"
         placeholder="Mobile No"
@@ -137,22 +144,9 @@ function NewRegistration(props) {
       />
       <br />
       <br />
-      <label>
-        <b>Re-type Password</b>
-      </label>
-      <input
-        type="Password"
-        name="Pass"
-        id="Pass"
-        placeholder="Re-type Password"
-        onChange={retypePasswordChange}
-      />
-      <br />
-      <br />
       <label for="gender">Select Gender</label>
       <select value={gender} onChange={handleSelectChange}>
         <option value="male">Male</option>
-
         <option value="female">Female</option>
       </select>
       <br />

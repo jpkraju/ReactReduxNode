@@ -19,12 +19,12 @@ function LoginRegistration(props) {
     <>
       {/* Landing page */}
       {pageno === 0 && (
-        <div>
-          <h3>Are you existing user ?</h3>{" "}
-          <button onClick={() => setPageno(1)}>Login</button>
+        <div className="login">
+          <h3 id="lbl">Are you existing user ?</h3>{" "}
+          <button id="log" onClick={() => setPageno(1)}>Login</button>
           <br />
-          <h3>New User :</h3>
-          <button
+          <h3 id="lbl">New User :</h3>
+          <button id="log"
             onClick={() => {
               setPageno(2);
               console.log(">>>>>>>>>>>>> hi there >>>>>>>>>");

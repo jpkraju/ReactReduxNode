@@ -1,0 +1,32 @@
+.topbarContainer{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #3c6d63;
+    position: sticky;
+    top: 0;
+}
+.topbarLeft{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+.topbarRight{
+    padding: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.logoPic{
+    height: 50px;
+    width: 100px;
+}
+.fa-user-circle{
+    font-weight: 600;
+}

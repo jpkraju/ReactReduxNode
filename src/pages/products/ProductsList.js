@@ -1,4 +1,6 @@
-function Products() {
+import Product from "./product";
+
+function ProductsList() {
   const products = [
     {
       title: "Pen",
@@ -20,20 +22,18 @@ function Products() {
       image: "",
       price: 15,
       total_qty: 40,
-    }
+    },
   ];
 
   return (
     <>
       <table>
-        {products.map((x) => {
-          return(<tr>
-            <td>{x.title}</td>
-          </tr>);
+        {products.map((p) => {
+          return <Product product={p}  />;
         })}
       </table>
     </>
   );
 }
 
-export default Products;
+export default ProductsList;

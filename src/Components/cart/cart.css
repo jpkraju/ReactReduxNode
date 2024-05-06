@@ -1,0 +1,34 @@
+.cart{
+    height: 99vh;
+    width: 100%;
+}
+.headDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+ 
+thead{
+    border: 1px solid black;
+}
+.item{
+    display: flex;
+}
+.productImg{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.p{
+    margin-top: -3px;
+}

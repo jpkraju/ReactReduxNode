@@ -6,6 +6,7 @@
     background: #3c6d63;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 .topbarLeft{
     margin-left: 10px;
@@ -16,6 +17,7 @@
 .logo{
     font-size: 28px;
     font-weight: bold;
+    color: white;
 }
 .topbarRight{
     padding: 5px;

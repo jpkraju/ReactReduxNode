@@ -13,13 +13,22 @@
     align-items: center;
 }
 .tab{
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
-    border: 1px solid black;
+    border-collapse: collapse ;
 }
- 
-thead{
-    border: 1px solid black;
+.CartThead{
+    background-color: #58897f;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+}
+.theadCol1,.theadCol2,.theadCol3,.theadCol4{
+    padding-left: 5px;
+
+}
+.item,.price,.quantity,.total{
+    padding-left: 5px;
 }
 .item{
     display: flex;
@@ -31,4 +40,8 @@ thead{
 }
 .p{
     margin-top: -3px;
+}
+
+tr:nth-child(even) {
+    background-color: #d2e1dd;
 }

@@ -6,7 +6,7 @@
     align-items: center;
     background: #3c6d63;
     position: sticky;
-    bottom: 0;
+    top:680px;
 }
 .footer{
     color: white;

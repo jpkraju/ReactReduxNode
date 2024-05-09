@@ -1,4 +1,6 @@
 .feed{
     flex: 4;
     padding: 10px;
+    overflow: scroll;
+    height: 600px;
 }

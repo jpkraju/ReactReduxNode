@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
-// import "./App.css";
 import Default from "./default";
-// import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/Nopage";
@@ -15,7 +13,6 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   function fn_usedata(udata) {
-    // alert(udata.last_name);
     setLoggedInUser(udata);
     setIslogged(true);
   }

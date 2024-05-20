@@ -24,10 +24,14 @@
     margin-right: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.logoPic{
-    height: 50px;
-    width: 100px;
+.topbarLink{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+    width: 100%;
 }
 .fa-user-circle{
     font-weight: 600;

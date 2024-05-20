@@ -7,6 +7,7 @@ import NoPage from "./pages/Nopage";
 import Products from "./pages/Products";
 import Layout from "./pages/Layout";
 import User from "./pages/user";
+import ProductItem from "./pages/ProductItem";
 
 function App() {
   const [islogged, setIslogged] = useState(false);
@@ -36,6 +37,8 @@ function App() {
               <Route path="blogs" element={<Blogs />} />
               <Route path="contact" element={<Contact />} />
               <Route path="products" element={<Products />} />
+              <Route path="/productItem/:id" element={<ProductItem />} />
+
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>

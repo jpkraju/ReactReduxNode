@@ -16,6 +16,7 @@
     width: 100%;
     border-radius: 10px;
     border-collapse: collapse ;
+    user-select: none;
 }
 .CartThead{
     background-color: #58897f;
@@ -23,7 +24,7 @@
     color: white;
     font-weight: bold;
 }
-.theadCol1,.theadCol2,.theadCol3,.theadCol4{
+.theadCol1,.theadCol2,.theadCol3,.theadCol4,.theadCol5{
     padding-left: 5px;
 
 }
@@ -45,3 +46,10 @@
 tr:nth-child(even) {
     background-color: #d2e1dd;
 }
+
+
+/* .productItemLink{
+    margin: none;
+    padding: none;
+
+} */

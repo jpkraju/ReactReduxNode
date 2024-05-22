@@ -1,4 +1,4 @@
-import products from "../utils/products.json"
+import productsData from "../utils/productsData.json"
 import CartInfo from "../Components/cart/CartInfo"
 import "../Components/cart/cart.css"
 
@@ -7,7 +7,7 @@ function Products() {
     <>
       <div className='cart'>
         <div className="cartWrapper">
-          <div className="headDiv"> <h3 className="head">Your Cart ({products.length} items)</h3></div>
+          <div className="headDiv"> <h3 className="head">Your Cart ({productsData.length} items)</h3></div>
           <div className="tabDiv">
             <table className="tab">
               <thead className='CartThead'>
@@ -22,7 +22,7 @@ function Products() {
               <tbody className='cartTbody'>
               
                 {
-                  products.map((x,index) => (<CartInfo product={x} index={index}/>))
+                  productsData.map((x,index) => (<CartInfo product={x} index={index}/>))
                 }
                 
               </tbody>

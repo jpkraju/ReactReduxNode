@@ -13,10 +13,10 @@ export default function Sidebar() {
             <Link className="link" to="/products">Products</Link>
           </div>
           <div className='sidebarListItem'>
-            <Link className="link" to="/contact">Inventory</Link>
+            <Link className="link" to="/inventory">Inventory</Link>
           </div>
           <div className='sidebarListItem'>
-            <Link className="link" to="/blogs">Reports</Link>
+            <Link className="link" to="/reports">Reports</Link>
           </div>
         </div>
       </div>

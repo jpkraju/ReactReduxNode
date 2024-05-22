@@ -3,7 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #3c6d63;
+    /* background: #3c6d63; */
+    background-color: var(--pine-green);
     position: sticky;
     top: 0;
     z-index: 999;

@@ -3,49 +3,6 @@ import CartInfo from "../Components/cart/CartInfo"
 import "../Components/cart/cart.css"
 
 function Products() {
-  // const products = [
-  //   {
-  //     id: 1,
-  //     title: "Pen",
-  //     desc: "pen description sample... 123...xyz",
-  //     image: "images/1.jpg",
-  //     price: 20,
-  //     quantity: 50,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "White notebooks",
-  //     desc: "white notebook description sample... 123...xyz",
-  //     image: "images/2.jpg",
-  //     price: 75,
-  //     quantity: 100,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "color pencils",
-  //     desc: "Color penciles description sample... 123...xyz",
-  //     image: "images/3.jpg",
-  //     price: 15,
-  //     quantity: 40,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "sketch",
-  //     desc: "sketch description sample... 123...xyz",
-  //     image: "images/1.jpg",
-  //     price: 15,
-  //     quantity: 40,
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "water color",
-  //     desc: "water color description sample... 123...xyz",
-  //     image: "images/2.jpg",
-  //     price: 15,
-  //     quantity: 40,
-  //   }
-  // ];
-
   return (
     <>
       <div className='cart'>

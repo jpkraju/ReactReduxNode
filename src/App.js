@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
 import Default from "./default";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
+import Reports from "./pages/Reports";
+import Inventory from "./pages/Inventory";
 import NoPage from "./pages/Nopage";
 import Products from "./pages/Products";
 import Layout from "./pages/Layout";
@@ -34,8 +34,8 @@ function App() {
                 index
                 element={<User userData={loggedInUser} logout={fn_logout} />}
               />
-              <Route path="blogs" element={<Blogs />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="reports" element={<Reports />} />
+              <Route path="inventory" element={<Inventory />} />
               <Route path="products" element={<Products />} />
               <Route path="/productItem/:id" element={<ProductItem />} />
 

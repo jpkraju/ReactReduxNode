@@ -1,51 +1,41 @@
 import React from 'react';
+import "./productItem.css"
 import { useParams, useLocation } from 'react-router-dom';
 
 const ProductItem = () => {
 
-  const { id } = useParams();
-  const location = useLocation();
-  const { product } = location.state || {};
+    const { id } = useParams();
+    const location = useLocation();
+    const { product } = location.state || {};
 
 
-    // const [selectedItem, setSelectedItem] = useState(item);
+//    ---------------product item repeating two times-------------
 
-    console.log('++',id);
-    console.log('>>>',product)
+    console.log('++', id);
+    console.log('>>>', product)
 
-    // setSelectedItem(item);
-
-    // const items = [
-    //     { id: 'item1', name: 'Item One', price: 100, description: 'This is item one.' },
-    //     { id: 'item2', name: 'Item Two', price: 200, description: 'This is item two.' },
-    //     // Add more items as needed
-    // ];
-
-    // const handleClick = (id) => {
-    //     const item = productitem.find(item => item.id === id);
-    //     setSelectedItem(item);
-    // };
+// ---------------------------------------------------------------
 
     return (
         <div>
-         
-            {/* {productitem.map(item => (
-                <div key={item.id}>
-                    <button onClick={() => handleClick(item.id)}>Get Data for {item.name}</button>
+            
+            <div className='productItemContainer'>
+                <div className="productItemLeft">
+                    <div className="imgdiv"><img src={product.image} alt="img" className="productImg" /></div>
                 </div>
-            ))} */}
-            {/* {onDetails.selectedItem && (
-                <div>
-                    <h3>Selected Item:</h3>
-                    <p>id: {onDetails.selectedItem.id}</p>
-                    <p>id: {onDetails.selectedItem.id}</p>
-                    <p>title: {onDetails.selectedItem.title}</p>
-                    <p>Description: {onDetails.selectedItem.desc}</p>
-                    <p>image: {onDetails.selectedItem.image}</p>
-                    <p>Price: {onDetails.selectedItem.price}</p>
-                    <p>quantity: {onDetails.selectedItem.quantity}</p>
+                <div className="productItemRight">
+                <h3 className="itemHeading">{product.title}</h3>
+                <hr/>
+                    <div className="itemDisc">
+                        <p>{product.desc}</p>
+                        {/* <p>{product.descs}</p> */}
+                        {/* <hr/>  */}
+                        <p><b>price</b> : {product.price} Rs</p>
+                    </div>
                 </div>
-            )} */}
+                {/* <h3 className="itemHeading">{product.title}</h3>
+            <p>{product.desc}</p> */}
+            </div>
         </div>
     );
 };

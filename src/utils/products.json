@@ -4,7 +4,7 @@
     "title": "Ball Pen",
     "desc": "Ball pen description sample... 123...xyz",
     "category": "pen" ,
-    "image": "images/ballpen.jpg",
+    "image": "/images/ballpen.jpg",
     "price": "20",
     "quantity": "50"
   },
@@ -13,7 +13,7 @@
     "title": "gel pen",
     "desc": "gel pen description sample... 123...xyz",
     "category": "pen" ,
-    "image": "images/gelpen.jpg",
+    "image": "/images/gelpen.jpg",
     "price": "75",
     "quantity": "100"
   },
@@ -22,7 +22,7 @@
     "title": "ink pen",
     "desc": "ink pen description sample... 123...xyz",
     "category": "pen" ,
-    "image": "images/inkpen.jpg",
+    "image": "/images/inkpen.jpg",
     "price": "15",
     "quantity": "40"
   },
@@ -31,7 +31,7 @@
     "title": "marker pen",
     "desc": "marker pen description sample... 123...xyz",
     "category": "pen" ,
-    "image": "images/markerpen.jpg",
+    "image": "/images/markerpen.jpg",
     "price": "85",
     "quantity": "40"
   },
@@ -40,7 +40,7 @@
     "title": "Telugu Book 10th",
     "desc": "Telugu Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/telugu10.jpg",
+    "image": "/images/telugu10.jpg",
     "price": "255",
     "quantity": "10"
   },
@@ -49,7 +49,7 @@
     "title": "Hindi Book 10th",
     "desc": "Hindi Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/hindi10.jpg",
+    "image": "/images/hindi10.jpg",
     "price": "215",
     "quantity": "10"
   },
@@ -58,7 +58,7 @@
     "title": "English Book 10th",
     "desc": "English Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/english10.jpg",
+    "image": "/images/english10.jpg",
     "price": "200",
     "quantity": "10"
   },
@@ -67,7 +67,7 @@
     "title": "Mathematics Book 10th",
     "desc": "Mathematics Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/maths10.jpg",
+    "image": "/images/maths10.jpg",
     "price": "455",
     "quantity": "10"
   },
@@ -76,7 +76,7 @@
     "title": "Physics Book 10th",
     "desc": "Physics Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/Physics10.jpg",
+    "image": "/images/Physics10.jpg",
     "price": "255",
     "quantity": "10"
   },
@@ -85,7 +85,7 @@
     "title": "Biology Book 10th",
     "desc": "Biology Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/biology10.jpg",
+    "image": "/images/biology10.jpg",
     "price": "310",
     "quantity": "10"
   },
@@ -94,7 +94,7 @@
     "title": "Social Book 10th",
     "desc": "Social Book 10th description sample... 123...xyz",
     "category": "book" ,
-    "image": "images/social10.jpg",
+    "image": "/images/social10.jpg",
     "price": "255",
     "quantity": "10"
   }

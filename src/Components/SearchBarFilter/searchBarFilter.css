@@ -1,0 +1,18 @@
+.SearchBarFilterContainer{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.searchInput{
+    width: 80%;
+}
+.searchList{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    height: 100px;
+    overflow: hidden;
+}
+.searchListName{
+    margin: 5px 0;
+}

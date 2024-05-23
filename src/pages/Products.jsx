@@ -1,11 +1,15 @@
 import productsData from "../utils/productsData.json"
 import CartInfo from "../Components/cart/CartInfo"
 import "../Components/cart/cart.css"
+import SearchBarFilter from "../Components/SearchBarFilter/SearchBarFilter";
 
 function Products() {
   return (
     <>
       <div className='cart'>
+        <div className="cartSearch">
+          <SearchBarFilter/>
+        </div>
         <div className="cartWrapper">
           <div className="headDiv"> <h3 className="head">Your Cart ({productsData.length} items)</h3></div>
           <div className="tabDiv">

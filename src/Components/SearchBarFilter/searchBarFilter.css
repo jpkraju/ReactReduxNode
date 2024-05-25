@@ -1,18 +1,32 @@
 .SearchBarFilterContainer{
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.SearchBarFilterWrapper{
+    width: 90%;
 }
 .searchInput{
-    width: 80%;
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
 }
 .searchList{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    height: 100px;
+    max-height: 100px;
     overflow: hidden;
+    display: none;
 }
 .searchListName{
     margin: 5px 0;
+}
+.searchListName a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
 }
